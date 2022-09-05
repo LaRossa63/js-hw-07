@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Задание 8</title>
+
+    <style>
+      .controls {
+        display: flex;
+        justify-content: center;
+      }
+
+      .boxes {
+        display: flex;
+
+        margin-top: 30px;
+
+        flex-wrap: wrap;
+      }
+    </style>
   </head>
   <body>
     <p><a href="../index.html">На главную</a></p>
 
-    <div id="controls">
-      <input type="number" min="0" max="100" step="1" />
+    <div class="controls">
+      <input class="controls__input" type="number" min="0" max="100" step="1" />
       <button type="button" data-action="render">Создать</button>
       <button type="button" data-action="destroy">Очистить</button>
     </div>
 
-    <div id="boxes"></div>
+    <div class="boxes"></div>
 
     <script src="../js/task-08.js" type="module"></script>
   </body>
